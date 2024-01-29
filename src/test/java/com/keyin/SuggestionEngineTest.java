@@ -1,25 +1,15 @@
 package com.keyin;
 
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;import com.keyin.SuggestionEngine;
 
-@ExtendWith(MockitoExtension.class)
+import java.util.Map;
+
 public class SuggestionEngineTest {
 
     private SuggestionEngine suggestionEngine = new SuggestionEngine();
-
-    @Mock
-    private SuggestionsDatabase mockSuggestionDB;
 
     @Test
     public void testGenerateSuggestions() throws Exception {
